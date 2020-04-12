@@ -1,0 +1,64 @@
+<div class="block">
+  <img class="big-image" src="../../../assets/339233.jpg">
+  <div class="aligned-text">Susisiekite su mumis<br></div>
+</div>
+
+<div class="container flex-column">
+  <div class="row">
+    <div class="col-lg-7 col-sm-12" >
+        <form [formGroup]="myForm">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">Vardas</label>
+                <input type="text" class="form-control" formControlname="name" placeholder="Vardas" required>
+              </div>
+              <div>
+                  <div *ngIf="myForm.controls['name'].hasError('required') && (myForm.controls['name'].dirty || myForm.controls['name'].touched)">
+                    Name is required.
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Pavardė</label>
+                <input type="text" class="form-control" placeholder="Pavardė"  required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefaultUsername">El. paštas</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="El. Paštas.." aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">Miestas</label>
+                <input type="text" class="form-control" placeholder="Miestas.." required>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Žinutė</label>
+                    <textarea class="form-control rounded-0" rows="10"></textarea>
+                  </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Sutinku su vartotojo taisyklėmis
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Siųsti</button>
+          </form>
+    </div>
+    <div class="col-3">
+        <img src="../../../assets/ad.jpg">
+    </div>
+  </div>
+</div>
+
+<!--The whole content below can be removed with the new code.-->
+

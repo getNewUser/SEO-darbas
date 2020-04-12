@@ -1,0 +1,63 @@
+.block {
+  position: relative;
+}
+
+.aligned-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+}
+
+img {
+  width: 100%;
+}
+
+
+.big-image {
+  height: 493px;
+  margin-bottom: 10vh;
+}
+
+.about-us {
+  width: 75%;
+  text-align: center;
+  margin: 6vh 47vh;
+}
+
+hr {
+  width: 85%;
+}
+
+#map-photo {
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .map-img {
+    max-width: 490px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 1200px) {
+    #content {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    
+    #ad-photo img{
+        width: 50%;
+        margin-left: 200px;
+    }
+    
+    .text {
+        width: 70%;
+        margin-left: 279px;
+    }
+}
